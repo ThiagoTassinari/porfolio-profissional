@@ -1,18 +1,3 @@
-/* Media Query For smartphones */
-@media only screen and (max-width: 768px) {
-  /* About */
-  .about .container {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  #about .col-left .about-img {
-    display: none;
-  }
-  /* End About */
-}
-
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
   .cta {
@@ -27,6 +12,52 @@
     font-size: 6rem;
   }
 }
+
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px) {
+  .cta {
+    font-size: 2.5rem;
+    padding: 20px 60px;
+  }
+  h1.section-title {
+    font-size: 6rem;
+  }
+
+  /* Hero */
+  #hero h1 {
+    font-size: 7rem;
+  }
+  /* End Hero */
+
+  /* Services Section */
+  #services .service-bottom .service-item {
+    flex-basis: 45%;
+    margin: 2.5%;
+  }
+  /* End Services Section */
+
+  /* Project */
+  #projects .project-item {
+    flex-direction: row;
+  }
+  #projects .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  #projects .project-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  #projects .all-projects .project-info {
+    height: 100%;
+  }
+  #projects .all-projects .project-img {
+    height: 100%;
+  }
+  /* End Project */
+}
+/* End Services Section */
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
